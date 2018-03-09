@@ -7,9 +7,17 @@ var burger = require("../models/burger");
 //     burger.create()
 // })
 router.get("/", function(req, res) {
+    burger.selectAll(function(err, data) {
+        var burger = {
+            name: data
+        }
+        if (err) throw err;
+
+        res.render("index", burger);
+
+    })
 
 
-    res.render("index");
 })
 router.post("/api/burger", function(req, res) {
     var burgerName = req.body;

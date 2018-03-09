@@ -26,3 +26,17 @@
                 width: 50px;
                 height: auto
             }
+            
+            .mydiv {
+                margin-left: -86px;
+            }
+            
+            p {
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                text-align: center;
+                width: 250px;
+                display: inline-block;
+                padding-bottom: 4px
+            }
