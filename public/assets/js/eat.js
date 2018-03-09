@@ -20,7 +20,6 @@ $(function() {
             var button = $(`<button data-id=${data} class="mybtn new${data}">Divour it</button>`)
             div.append(`<img id="myimg" src=${imglink[num]}>`).append(p).append(button);
             $("#new").append(div);
-            div.css("margin-left", "-86px")
 
         })
     });
